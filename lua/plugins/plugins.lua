@@ -1,6 +1,6 @@
 return {
   { "nvim-tree/nvim-web-devicons" },
-  { "ryanoasis/vim-devicons", opt = true },
+  { "ryanoasis/vim-devicons" },
   {
     "akinsho/bufferline.nvim",
     event = "VeryLazy",
@@ -47,11 +47,6 @@ return {
   { "f-person/git-blame.nvim" },
   -- diff 
   { "sindrets/diffview.nvim" },
-  -- markdown browser preview
-  {
-    "iamcco/markdown-preview.nvim",
-    run = function()
-      vim.fn["mkdp#util#install"]()
-    end,
-  }
-}
+  -- auto html tags
+  { "windwp/nvim-ts-autotag" },
+} 

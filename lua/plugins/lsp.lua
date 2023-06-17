@@ -23,6 +23,7 @@ return {
       require("lspconfig").volar.setup({
         filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue", "json" },
       })
+      require'lspconfig'.tailwindcss.setup{}
     end,
   },
   -- snippets
@@ -75,23 +76,6 @@ return {
       })
     end,
   },
-  -- mason
-  {
-    "williamboman/mason.nvim",
-    cmd = "Mason",
-    ensure_installed = {
-      "lua_ls",
-      "volar",
-      "tailwindcss",
-      "cssls",
-      "vimls",
-      "yamlls",
-      "jsonls",
-      "eslint",
-      "emmet_ls",
-      "prettierd",
-    },
-  },
   -- add more treesitter parsers
   {
     "nvim-treesitter/nvim-treesitter",
@@ -112,6 +96,9 @@ return {
         "yaml",
         "css",
       },
+      autotag = {
+        enable = true,
+      }
     },
   },
 }
