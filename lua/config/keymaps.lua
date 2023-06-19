@@ -26,13 +26,9 @@ vim.keymap.set("n", "<leader>8", ":call NumberToggle()<CR>", { desc = "Toggle re
 vim.keymap.set({ "n", "v" }, "<C-S-Down>", ":MoveLine(1)<CR>")
 vim.keymap.set({ "n", "v" }, "<C-S-Up>", ":MoveLine(-1)<CR>")
 
-
--- Toggle NeoTree
-vim.keymap.set({"n","v"},"<C-e>", ":NvimTreeToggle<CR>")
-
 -- Toggle Telescope find files
 vim.keymap.set("n", "<leader>ff", ":Telescope find_files<CR>")
-vim.keymap.set("n","<leader>g", ":Telescope live_grep<CR>")
+vim.keymap.set("n","<leader>gf", ":Telescope live_grep<CR>")
 
 -- go up and down half page and center cursor
 vim.keymap.set("n","<C-u>", "<C-u>zz")
