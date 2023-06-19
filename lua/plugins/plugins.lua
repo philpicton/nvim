@@ -99,5 +99,6 @@ return {
   },
   -- auto html tags
   { "windwp/nvim-ts-autotag" },
-}
+  
+} 
 

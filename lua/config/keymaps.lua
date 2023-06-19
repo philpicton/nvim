@@ -23,8 +23,11 @@ endfunction
 vim.keymap.set("n", "<leader>8", ":call NumberToggle()<CR>", { desc = "Toggle relative line numbers" })
 
 -- Move lines up and down
-vim.keymap.set({ "n", "v" }, "<C-S-Down>", ":MoveLine(1)<CR>")
-vim.keymap.set({ "n", "v" }, "<C-S-Up>", ":MoveLine(-1)<CR>")
+vim.keymap.set({ "n", "v" }, "<C-S-j>", ":MoveLine(1)<CR>")
+vim.keymap.set({ "n", "v" }, "<C-S-k>", ":MoveLine(-1)<CR>")
+
+-- Toggle NeoTree
+vim.keymap.set({"n","v"},"<C-e>", ":Neotree toggle<CR>")
 
 -- Toggle Telescope find files
 vim.keymap.set("n", "<leader>ff", ":Telescope find_files<CR>")
