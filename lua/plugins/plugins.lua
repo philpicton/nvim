@@ -47,13 +47,7 @@ return {
   { "f-person/git-blame.nvim" },
   -- diff 
   { "sindrets/diffview.nvim" },
-  -- markdown browser preview
-  {
-    "iamcco/markdown-preview.nvim",
-    config = function()
-      vim.fn["mkdp#util#install"]()
-    end,
-  },
+ 
   { 'echasnovski/mini.nvim', 
     version = false,
     config = function()
