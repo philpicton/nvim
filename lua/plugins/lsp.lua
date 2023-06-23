@@ -23,7 +23,9 @@ return {
       require("lspconfig").volar.setup({
         filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue", "json" },
       })
-      require'lspconfig'.tailwindcss.setup{}
+      require("lspconfig").tailwindcss.setup({})
+      -- setup autoformat
+      require("lazyvim.plugins.lsp.format").setup(opts)
     end,
   },
   -- snippets
@@ -98,7 +100,7 @@ return {
       },
       autotag = {
         enable = true,
-      }
+      },
     },
   },
 }
