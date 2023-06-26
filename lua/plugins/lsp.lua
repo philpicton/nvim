@@ -24,8 +24,6 @@ return {
         filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue", "json" },
       })
       require("lspconfig").tailwindcss.setup({})
-      -- setup autoformat
-      require("lazyvim.plugins.lsp.format").setup(opts)
     end,
   },
   -- snippets
