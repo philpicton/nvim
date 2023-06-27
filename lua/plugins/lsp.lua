@@ -18,12 +18,12 @@ return {
         end,
       },
     },
-    -- Take over the ts linting of these files using Volar instead of ts.
-    config = function(plugin, opts)
+    opts = function()
       require("lspconfig").volar.setup({
         filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue", "json" },
       })
       require("lspconfig").tailwindcss.setup({})
+
     end,
   },
   -- snippets
