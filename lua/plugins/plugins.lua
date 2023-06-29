@@ -33,25 +33,26 @@ return {
     },
   },
   -- move lines up and down
-  { 'fedepujol/move.nvim' },
+  { "fedepujol/move.nvim" },
   -- git commands, :Git whatever
   { "tpope/vim-fugitive" },
   -- git signs in gutter
   {
-    'lewis6991/gitsigns.nvim', 
+    "lewis6991/gitsigns.nvim",
     config = function()
-      require('gitsigns').setup()
-    end
+      require("gitsigns").setup()
+    end,
   },
-  -- git blame 
+  -- git blame
   { "f-person/git-blame.nvim" },
-  -- diff 
+  -- diff
   { "sindrets/diffview.nvim" },
- 
-  { 'echasnovski/mini.nvim', 
+
+  {
+    "echasnovski/mini.nvim",
     version = false,
     config = function()
-      require('mini.comment').setup({
+      require("mini.comment").setup({
         -- Options which control module behavior
         options = {
           -- Function to compute custom 'commentstring' (optional)
@@ -71,13 +72,13 @@ return {
         mappings = {
           -- Toggle comment (like `gcip` - comment inner paragraph) for both
           -- Normal and Visual modes
-          comment = 'tgl',
+          comment = "tgl",
 
           -- Toggle comment on current line
-          comment_line = 'tgll',
+          comment_line = "tgll",
 
           -- Define 'comment' textobject (like `dgc` - delete whole comment block)
-          textobject = 'tglt',
+          textobject = "tglt",
         },
 
         -- Hook functions to be executed at certain stage of commenting
@@ -87,12 +88,18 @@ return {
           -- After successful commenting. Does nothing by default.
           post = function() end,
         },
-      }
-      )
+      })
     end,
   },
   -- auto html tags
   { "windwp/nvim-ts-autotag" },
-  
-} 
 
+  {
+    "folke/zen-mode.nvim",
+    opts = {
+      -- your configuration comes here
+      -- or leave it empty to use the default settings
+      -- refer to the configuration section below
+    },
+  },
+}
