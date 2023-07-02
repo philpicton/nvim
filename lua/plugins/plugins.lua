@@ -102,4 +102,5 @@ return {
       -- refer to the configuration section below
     },
   },
+  { "ThePrimeagen/vim-be-good" },
 }
