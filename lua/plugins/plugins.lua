@@ -10,7 +10,7 @@ return {
     },
     opts = {
       options = {
-        buffer_close_icon = "☠️",
+        buffer_close_icon = "󰖭",
         offsets = {
           {
             filetype = "neo-tree",
