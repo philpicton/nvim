@@ -56,17 +56,4 @@ return {
     opts = {},
   },
   { "ThePrimeagen/vim-be-good" },
-  {
-    "rcarriga/neotest",
-    requires = {
-      "marilari88/neotest-vitest",
-    },
-    config = function()
-      require("neotest").setup({
-        adapters = {
-          require("neotest-vitest"),
-        },
-      })
-    end,
-  },
 }
