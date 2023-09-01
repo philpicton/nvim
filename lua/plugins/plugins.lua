@@ -37,13 +37,6 @@ return {
   -- git commands, :Git whatever
   { "tpope/vim-fugitive" },
   -- git signs in gutter
-  {
-    "lewis6991/gitsigns.nvim",
-    config = function()
-      require("gitsigns").setup()
-    end,
-  },
-  -- git blame
   { "f-person/git-blame.nvim" },
   -- diff
   { "sindrets/diffview.nvim" },
