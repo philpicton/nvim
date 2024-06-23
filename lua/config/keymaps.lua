@@ -22,12 +22,12 @@ endfunction
 vim.keymap.set("n", "<leader>8", ":call NumberToggle()<CR>", { desc = "Toggle relative line numbers" })
 
 -- Move lines up and down
-vim.keymap.set({ "n", "v" }, "<C-S-Down>", ":MoveLine(1)<CR>")
-vim.keymap.set({ "n", "v" }, "<C-S-Up>", ":MoveLine(-1)<CR>")
+vim.keymap.set({ "n", "v" }, "<C-S-Down>", ":MoveLine(1)<CR>", { desc = "Move line down" })
+vim.keymap.set({ "n", "v" }, "<C-S-Up>", ":MoveLine(-1)<CR>", { desc = "Move line up" })
 
 -- Toggle live grep
-vim.keymap.set("n", "<leader>gf", ":Telescope live_grep<CR>")
+vim.keymap.set({ "n", "v" }, "<leader>gf", ":Telescope live_grep<CR>", { desc = "Telescope live grep" })
 
 -- Buffer Navigation
-vim.keymap.set("n", "<leader><Right>", ":bnext<CR>")
-vim.keymap.set("n", "<leader><Left>", ":bprevious<CR>")
+vim.keymap.set({ "n", "v" }, "<leader><Right>", ":bnext<CR>", { desc = "Buffer right" })
+vim.keymap.set({ "n", "v" }, "<leader><Left>", ":bprevious<CR>", { desc = "Buffer left" })
