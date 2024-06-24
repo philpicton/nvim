@@ -28,6 +28,10 @@ vim.keymap.set({ "n", "v" }, "<C-S-Up>", ":MoveLine(-1)<CR>", { desc = "Move lin
 -- Toggle live grep
 vim.keymap.set({ "n", "v" }, "<leader>gf", ":Telescope live_grep<CR>", { desc = "Telescope live grep" })
 
+-- Git diff pick left or right
+vim.keymap.set("n", "<leader>g2", ":diffget //2<cr>", { desc = "diff get //2" })
+vim.keymap.set("n", "<leader>g3", ":diffget //3<cr>", { desc = "diff get //3" })
+
 -- Buffer Navigation
 vim.keymap.set({ "n", "v" }, "<leader><Right>", ":bnext<CR>", { desc = "Buffer right" })
 vim.keymap.set({ "n", "v" }, "<leader><Left>", ":bprevious<CR>", { desc = "Buffer left" })
