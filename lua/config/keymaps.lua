@@ -31,6 +31,7 @@ vim.keymap.set({ "n", "v" }, "<leader>gf", ":Telescope live_grep<CR>", { desc = 
 -- Git diff pick left or right
 vim.keymap.set("n", "<leader>g2", ":diffget //2<cr>", { desc = "diff get //2" })
 vim.keymap.set("n", "<leader>g3", ":diffget //3<cr>", { desc = "diff get //3" })
+vim.keymap.set("n", "<leader>gd", ":Gvdiffsplit!`<cr>", { desc = "3 way diff split" })
 
 -- Buffer Navigation
 vim.keymap.set({ "n", "v" }, "<leader><Right>", ":bnext<CR>", { desc = "Buffer right" })
