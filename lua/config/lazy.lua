@@ -42,3 +42,4 @@ require("lazy").setup({
     },
   },
 })
+require("move").setup({})
