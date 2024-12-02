@@ -5,6 +5,14 @@ return {
   { "tpope/vim-fugitive" },
   -- git blame
   { "f-person/git-blame.nvim" },
+  {
+    "atiladefreitas/dooing",
+    config = function()
+      require("dooing").setup({
+        -- your custom config here (optional)
+      })
+    end,
+  },
   -- {
   --   "David-Kunz/gen.nvim",
   --   opts = {
